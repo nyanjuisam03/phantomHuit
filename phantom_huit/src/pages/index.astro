@@ -1,0 +1,31 @@
+---
+import Navigation from "../components/navigation.jsx";
+import HeroComponent from "../components/HeroComponent.jsx"
+import Services from  "../components/Service.jsx"
+import AboutUs from  "../components/AboutUs.jsx"
+import WhyChooseUs from "../components/WhyChooseUs.jsx"
+import Vision from "../components/Vision.jsx"
+import ContactUs from "../components/ContactUs.jsx"
+import Footer from "../components/Footer.jsx"
+import logoimageOne from "../../public/pictures/logoimageOne.png";
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Phantom_Huit</title>
+	</head>
+	<body>
+	<Navigation  client:load />
+	<HeroComponent client:load />
+	<AboutUs/>
+	<Services client:load />
+	<WhyChooseUs />
+	<ContactUs/>
+	<Footer/>
+	</body>
+</html>

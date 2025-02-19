@@ -1,0 +1,28 @@
+---
+import Navigation from "../components/navigation.jsx";
+import ReusableHeroComponent from "../components/ReusableHeroComponent.jsx"
+import MainAboutUs from "../components/MainAboutUs.jsx"
+import Footer from "../components/Footer.jsx"
+import Mission from "../components/Mission.jsx"
+import Vision from "../components/Vision.jsx"
+import CoreValue from "../components/CoreValue.jsx"
+import NormalNavigation from "../components/NormalNavigation.jsx"
+import AboutHeader from "../components/AboutHeader.jsx"
+---
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Phantom_Huit</title>
+	</head>
+    <body>
+    <NormalNavigation client:load />
+    <MainAboutUs/>
+    <Mission/>
+    <Vision/>
+    <CoreValue/>
+  <Footer/>
+    </body>
+    </html>
