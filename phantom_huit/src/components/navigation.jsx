@@ -65,16 +65,16 @@ function Navigation() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isSticky ? 'bg-white text-gray-900 shadow-md' : 'bg-transparent text-white'
       }`}>
-        <div className="container mx-auto flex justify-between items-center p-2">
+        <div className="container mx-auto flex justify-between items-center p-1">
           {/* Logo - Increased size options */}
           <a href="/" className="flex items-center space-x-2">
             <img 
-              src="../../public/pictures/Biglogo1.png"
+              src="../../public/pictures/final2.png"
               alt="Company Logo"
               // Option 1: Wider logo (w-40 instead of w-28)
               // Option 2: Taller logo (h-20 instead of h-12)
               // Option 3: Both wider and taller (w-48 h-16)
-              className="w-44 h-20 object-contain transition-opacity duration-300"
+              className="w-56 h-28 object-contain transition-opacity duration-300"
             />
           </a>
           {/* Desktop Navigation */}

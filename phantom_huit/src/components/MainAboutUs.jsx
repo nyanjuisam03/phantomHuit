@@ -3,7 +3,7 @@ import React from 'react'
 function MainAboutUs() {
   return (
     <div>
-       <section className="about-us py-20 bg-gray-50 text-gray-800">
+       <section className="about-us py-20 bg-gray-50 text-gray-800" id='about-us'>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
         

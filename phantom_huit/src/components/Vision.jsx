@@ -19,7 +19,6 @@ function Vision() {
         </div>
 
 
-
           {/* Right side - Image */}
           
           <div className="relative h-full">

@@ -24,7 +24,7 @@ const ContactUs = () => {
 
   return (
     <div className="w-full bg-gray-100 min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 py-16">
+      <div className="max-w-6xl mx-auto px-4 py-16" id='contact-us'>
         <h2 className="text-xl font-bold text-center  mb-12">Get In Touch</h2>
         
 

@@ -30,7 +30,7 @@ function HeroComponent() {
     rewind: true,
     autoplay: true,
     interval: 5000,
-    arrows: true,
+    arrows: false,
     pagination: false,
     pauseOnHover: false
   };
