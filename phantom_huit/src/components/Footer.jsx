@@ -18,11 +18,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-white text-lg font-semibold uppercase mb-4">About Us</h3>
-            <img 
+            {/* <img 
               src="/api/placeholder/120/40" 
               alt="Company Logo" 
               className="mb-4"
-            />
+            /> */}
             <p className="text-sm">
               We are a leading company providing innovative solutions to our clients worldwide.
             </p>
@@ -47,11 +47,7 @@ const Footer = () => {
                   Services
                 </a>
               </li>
-              <li>
-                <a href="#services" className="text-sm hover:text-white transition-colors">
-                  Projects
-                </a>
-              </li>
+             
               <li>
                 <a href="#contact" className="text-sm hover:text-white transition-colors">
                   Contact

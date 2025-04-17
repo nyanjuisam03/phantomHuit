@@ -1,12 +1,13 @@
 import React from 'react';
 import { services } from '../data/service.js';
 
-const ServiceRow = ({ title, description, imageUrl, isImageRight, features, id }) => {
+const ServiceRow = ({  title, description, imageUrl, isImageRight, features, id, backgroundColor}) => {
+  
   const contentSection = (
-    <div className="w-full md:w-1/2 p-4"> {/* Reduced padding from p-8 to p-4 */}
-      <h3 className="text-2xl font-serif mb-2">{title}</h3> {/* Reduced margin-bottom */}
-      <p className="text-neutral-600 mb-4">{description}</p> {/* Reduced margin-bottom */}
-      <ul className="space-y-1 mb-4"> {/* Reduced space between items */}
+    <div className="w-full md:w-[70%] p-4 flex flex-col justify-center">
+      <h3 className="text-2xl font-serif mb-2">{title}</h3>
+      <p className="text-neutral-600 mb-4">{description}</p>
+      <ul className="space-y-1 mb-4">
         {features?.map((feature, index) => (
           <li key={index} className="text-neutral-600">• {feature}</li>
         ))}
@@ -21,8 +22,8 @@ const ServiceRow = ({ title, description, imageUrl, isImageRight, features, id }
   );
 
   const imageSection = (
-    <div className="hidden md:block w-full md:w-1/2 bg-neutral-100">
-      <div className="aspect-[3/2] w-full h-full"> {/* Changed aspect ratio to reduce height */}
+    <div className="hidden md:block w-full md:w-[30%] bg-neutral-100">
+      <div className="w-full h-full">
         {imageUrl ? (
           <img 
             src={imageUrl} 
@@ -37,7 +38,7 @@ const ServiceRow = ({ title, description, imageUrl, isImageRight, features, id }
   );
 
   return (
-    <div className="flex flex-col md:flex-row border-b border-neutral-200 last:border-b-0">
+    <div className={`flex flex-col md:flex-row border-b border-neutral-200 last:border-b-0 min-h-[500px] ${backgroundColor}`}>
       {isImageRight ? (
         <>
           {contentSection}
@@ -55,13 +56,14 @@ const ServiceRow = ({ title, description, imageUrl, isImageRight, features, id }
 
 function ServicePage() {
   return (
-    <section className="py-12"> {/* Reduced padding from py-16 to py-8 */}
-      <div className="max-w-6xl mx-auto">
+    <section className=""> {/* Reduced padding from py-16 to py-8 */}
+      <div className="px-1 mx-auto">
         {services.map((service, index) => (
           <ServiceRow 
-            key={service.id}
-            {...service}
-            isImageRight={index % 2 === 1}
+          key={service.id}
+          {...service}
+          isImageRight={index % 2 === 1}
+          backgroundColor={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}
           />
         ))}
       </div>

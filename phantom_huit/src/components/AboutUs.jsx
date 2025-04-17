@@ -11,7 +11,7 @@ const AboutUs = () => {
             <img
               src="/pictures/Aboutuspic1.jpg"
               alt="Phantom-Hult Investments Team"
-              className="w-[590px] h-[350px] object-cover "
+              className="hidden sm:block sm:w-[590px] h-[350px] object-cover "
             />
           
           </div>

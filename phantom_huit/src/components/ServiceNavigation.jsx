@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../../public/pictures/final2.png";
+
 
 // SVG icons
 const MenuIcon = () => (
@@ -17,7 +17,7 @@ const CloseIcon = () => (
   </svg>
 );
 
-function NormalNavigation() {
+function ServiceNavigation() {
   const [isSticky, setIsSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,7 +43,9 @@ function NormalNavigation() {
 
   return (
     <div>
-      <nav className={`fixed top-0 left-0 right-0 z-50 bg-white text-gray-900 transition-all duration-300 h-20 ${isSticky ? 'shadow-md' : ''}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isSticky ? 'bg-white text-gray-900 shadow-md' : 'bg-transparent text-white'
+      }`}>
         <div className="container mx-auto flex justify-between items-center p-4">
           {/* Logo */}
           <a href="/" className="flex items-center space-x-2">
@@ -91,4 +93,4 @@ function NormalNavigation() {
   );
 }
 
-export default NormalNavigation;
+export default ServiceNavigation;

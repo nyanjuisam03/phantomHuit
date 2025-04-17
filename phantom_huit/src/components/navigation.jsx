@@ -65,20 +65,17 @@ function Navigation() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isSticky ? 'bg-white text-gray-900 shadow-md' : 'bg-transparent text-white'
       }`}>
-        <div className="container mx-auto flex justify-between items-center p-1">
+        <div className="container mx-auto flex justify-between items-center p-1 h-28 ">
           {/* Logo - Increased size options */}
-          <a href="/" className="flex items-center space-x-2">
+          <a href="/" className="pt-8 -pl-1 sm:pt-0 sm:flex items-center space-x-1">
             <img 
               src="../../public/pictures/final2.png"
               alt="Company Logo"
-              // Option 1: Wider logo (w-40 instead of w-28)
-              // Option 2: Taller logo (h-20 instead of h-12)
-              // Option 3: Both wider and taller (w-48 h-16)
-              className="w-56 h-28 object-contain transition-opacity duration-300"
+              className="w-56 h-32 object-contain transition-opacity duration-300"
             />
           </a>
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex space-x-6 text-sm">
+          <ul className="hidden md:flex space-x-5 text-sm">
             {navLinks.map((item) => (
               <li key={item}>
                 <a
@@ -93,7 +90,7 @@ function Navigation() {
           {/* Hamburger Menu Button */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden"
+            className="md:hidden px-12"
             aria-label="Toggle menu"
           >
             {isOpen ? <CloseIcon /> : <MenuIcon />}

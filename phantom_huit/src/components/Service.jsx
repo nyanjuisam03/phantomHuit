@@ -54,6 +54,7 @@ const Services = () => {
      },
   ];
 
+
   return (
     <section id="services" className="py-10 bg-gray-100">
       <div className="container mx-auto">
@@ -64,6 +65,7 @@ const Services = () => {
             perPage: 3,
             gap: '3rem',
             pagination: false,
+            arrows: false,
             autoplay:true,
             type: 'loop',
             interval: 4000,           
