@@ -67,7 +67,7 @@ function Navigation() {
       }`}>
         <div className="container mx-auto flex justify-between items-center p-1 h-28 ">
           {/* Logo - Increased size options */}
-          <a href="/" className="pt-8 -pl-1 sm:pt-0 sm:flex items-center space-x-1">
+          <a href="/" className="pt-8 -pl-1 sm:pt-6 sm:flex items-center space-x-1">
             <img 
               src="../../public/pictures/final2.png"
               alt="Company Logo"
